@@ -33,3 +33,8 @@ def heartbeat():
     print(request)
     app.logger.warning('A warning occurred (%d apples)', 42)
     return('OK')
+
+
+@app.route('/treee', methods=['GET'])
+def tree():
+    return render_template('tree.html', title='CSIKworld')
